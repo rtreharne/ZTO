@@ -4,7 +4,7 @@ from mpl_toolkits.mplot3d import axes3d
 import matplotlib.pyplot as plt
 from matplotlib import cm
 from matplotlib.mlab import griddata
-
+from scipy import stats
 
 font = {'size'   : 14}
 matplotlib.rc('font', **font)
@@ -24,6 +24,11 @@ z_sno2 = z1-z3
 z_zno = z3*4.04
 z = z_sno2/(z_sno2+z_zno)*100
 
+slope, intercept, r_value, p_value, st_err = stats.linregress(z,z4)
+print slope, intercept
+
+x_lin = np.linspace(0,100,100)
+y_lin = slope*x_lin + intercept
 
 xi = np.linspace(-5, 5, 11)
 yi = np.linspace(-5, 5, 11)
@@ -43,10 +48,12 @@ ax3.set_xlim(0,100)
 ax3.set_title('Band gap (ellipsometry) vs %SnO$_{2}$')
 ax3.set_ylabel('Band gap, E$_G$ (eV)')
 ax3.set_xlabel('% wt. SnO$_{2}$')
+ax3.plot(x_lin, y_lin)
+
+
 lvls = arange(min(z), max(z), (max(z)-min(z))/10)
 ##lvls = arange(140,350,20)
 plot2 = ax2.contourf(X, Y, Z, zdir='z', levels= lvls, cmap=cm.jet, alpha = 1.0)
-
 #cbar = colorbar(plot2, ticks = lvls)
 #cbar.set_label("Zn/(Cd+Zn), $x$", fontsize = 16)
 ax2.set_xlabel("X (cm)")
