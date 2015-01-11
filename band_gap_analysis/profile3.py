@@ -13,12 +13,14 @@ data1 = '140519_2_ZnO_SnO2.txt'
 data2 = '140516_2_ZnO_SnO2.txt'
 data3 = '140516_1_ZnO.txt'
 data4 = 'band_gap_prof.txt'
+data5 = '140516_2_d.txt'
 x = loadtxt(data1, unpack=True, usecols=[0])
 y = loadtxt(data1, unpack=True, usecols=[1])
 z1= loadtxt(data1, unpack=True, usecols=[2])
 z2 = loadtxt(data2, unpack = True, usecols = [2])
 z3 = loadtxt(data3, unpack = True, usecols = [2])
 z4 = loadtxt(data4, unpack = True, usecols = [2])
+d = loadtxt(data5, unpack = True, usecols = [2])
 
 z_sno2 = z1-z3
 z_zno = z3*4.04
@@ -43,13 +45,15 @@ ax2.set_aspect('equal')
 
 fig3 = figure()
 ax3 = fig3.add_subplot(111)
-ax3.plot(z,z4,'o')
+#ax3.plot(z,z4,'o')
 ax3.set_xlim(0,100)
 ax3.set_title('Band gap (ellipsometry) vs %SnO$_{2}$')
 ax3.set_ylabel('Band gap, E$_G$ (eV)')
 ax3.set_xlabel('% wt. SnO$_{2}$')
 ax3.plot(x_lin, y_lin)
 
+cb = ax3.scatter(z,z4,s=100,c=d,alpha=0.5)
+bar = fig3.colorbar(cb)
 
 lvls = arange(min(z), max(z), (max(z)-min(z))/10)
 ##lvls = arange(140,350,20)
