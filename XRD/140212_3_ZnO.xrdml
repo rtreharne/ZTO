@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xrdMeasurements xmlns="http://www.xrdml.com/XRDMeasurement/1.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xrdml.com/XRDMeasurement/1.5 http://www.xrdml.com/XRDMeasurement/1.5/XRDMeasurement.xsd" status="Completed">
+	<comment>
+		<entry>Configuration=PRS/PASS 2, Owner=User-1, Creation date=07/03/2014 17:09:06</entry>
+		<entry>Goniometer=PW3050/65 (Theta/2Theta); Minimum step size 2Theta:0.0001; Minimum step size Omega:0.0001</entry>
+		<entry>Sample stage=MRD Cradle; Minimum step size Phi:0.01; Minimum step size Chi:0.01; Minimum step size X:0.01; Minimum step size Y:0.01; Minimum step size Z:0.001</entry>
+		<entry>Diffractometer system=XPERT-PRO</entry>
+		<entry>Measurement program=Enzo_LA, Owner=User-1, Creation date=12/09/2012 14:33:24</entry>
+	</comment>
+	<sample type="To be analyzed">
+		<id></id>
+		<name></name>
+		<preparedBy></preparedBy>
+	</sample>
+	<xrdMeasurement measurementType="Scan" status="Completed" sampleMode="Reflection">
+		<comment>
+			<entry/>
+		</comment>
+		<usedWavelength intended="K-Alpha 1">
+			<kAlpha1 unit="Angstrom">1.5405600</kAlpha1>
+			<kAlpha2 unit="Angstrom">1.5443900</kAlpha2>
+			<kBeta unit="Angstrom">1.3922200</kBeta>
+			<ratioKAlpha2KAlpha1>0.5000</ratioKAlpha2KAlpha1>
+		</usedWavelength>
+		<incidentBeamPath>
+			<radius unit="mm">426.70</radius>
+			<xRayTube id="1010048" name="Empyrean XRD tube Cu LFF HR DK401944">
+				<tension unit="kV">40</tension>
+				<current unit="mA">40</current>
+				<anodeMaterial>Cu</anodeMaterial>
+				<focus type="Line">
+					<length unit="mm">12.0</length>
+					<width unit="mm">0.4</width>
+					<takeOffAngle unit="deg">7.0</takeOffAngle>
+				</focus>
+			</xRayTube>
+			<xRayMirror id="27010001" name="Inc. Beam Cu W/Si (parabolic MRD)" hybrid="false">
+				<crystal type="Graded" shape="Parabolic">W/Si</crystal>
+				<acceptanceAngle unit="deg">0.800</acceptanceAngle>
+				<length unit="mm">60.0</length>
+			</xRayMirror>
+			<divergenceSlit id="22010011" name="Fixed slit 1/32°" xsi:type="fixedDivergenceSlitType">
+				<distanceToSample unit="mm">220.00</distanceToSample>
+				<height unit="mm">0.05</height>
+			</divergenceSlit>
+			<beamAttenuator id="26010001" name="Programmable beam attenuator Ni 0.125 mm" xsi:type="intensitySwitchedBeamAttenuatorType">
+				<factor>185.80</factor>
+				<material>Ni</material>
+				<activateLevel unit="counts per second">500000</activateLevel>
+				<deactivateLevel unit="counts per second">400000</deactivateLevel>
+			</beamAttenuator>
+		</incidentBeamPath>
+		<sampleOffset>
+			<position axis="2Theta" unit="deg">0.0502</position>
+			<position axis="Omega" unit="deg">0.1737</position>
+		</sampleOffset>
+		<diffractedBeamPath>
+			<radius unit="mm">320.00</radius>
+			<antiScatterSlit id="22060009" name="Programmable anti-scatter slit" xsi:type="fixedAntiScatterSlitType">
+				<angle unit="deg">0.03125</angle>
+			</antiScatterSlit>
+			<monochromator id="23010018" name="3-bounce Ge(220) symmetrical analyzer for Cu" hybrid="false">
+				<crystal type="Symmetric" shape="Flat">Ge</crystal>
+				<numberOfReflections>3</numberOfReflections>
+				<hkl>
+					<h>2</h>
+					<k>2</k>
+					<l>0</l>
+				</hkl>
+			</monochromator>
+			<receivingSlit id="22020009" name="Programmable receiving slit">
+				<height unit="mm">0.50</height>
+			</receivingSlit>
+			<detector id="7010011" name="Proportional detector Xe" xsi:type="pointDetectorType">
+				<phd>
+					<lowerLevel unit="%">35.0</lowerLevel>
+					<upperLevel unit="%">80.0</upperLevel>
+				</phd>
+			</detector>
+		</diffractedBeamPath>
+		<scan appendNumber="0" mode="Continuous" scanAxis="Gonio" status="Completed">
+			<header>
+				<startTimeStamp>2015-01-12T09:43:05+00:00</startTimeStamp>
+				<endTimeStamp>2015-01-12T10:50:17+00:00</endTimeStamp>
+				<author>
+					<name>MJR</name>
+				</author>
+				<source>
+					<applicationSoftware version="3.0c">Data Collector</applicationSoftware>
+					<instrumentControlSoftware version="2.1A">XPERT-PRO</instrumentControlSoftware>
+					<instrumentID>0000000000000000</instrumentID>
+				</source>
+			</header>
+			<dataPoints>
+				<positions axis="2Theta" unit="deg">
+					<startPosition>25.0500</startPosition>
+					<endPosition>74.9500</endPosition>
+				</positions>
+				<positions axis="Omega" unit="deg">
+					<startPosition>12.5250</startPosition>
+					<endPosition>37.4750</endPosition>
+				</positions>
+				<positions axis="Phi" unit="deg">
+					<commonPosition>0.00</commonPosition>
+				</positions>
+				<positions axis="Chi" unit="deg">
+					<commonPosition>0.00</commonPosition>
+				</positions>
+				<positions axis="X" unit="mm">
+					<commonPosition>0.00</commonPosition>
+				</positions>
+				<positions axis="Y" unit="mm">
+					<commonPosition>0.00</commonPosition>
+				</positions>
+				<positions axis="Z" unit="mm">
+					<commonPosition>5.823</commonPosition>
+				</positions>
+				<beamAttenuationFactors>1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00</beamAttenuationFactors>
+				<commonCountingTime unit="seconds">8.00</commonCountingTime>
+				<intensities unit="counts">8346 8222 8219 8294 8343 8147 8292 8146 8037 8105 8041 8057 8056 7915 7733 7949 7842 7699 7797 7629 7619 7614 7619 7484 7523 7423 7468 7352 7298 7441 7345 7288 7289 7248 7348 7113 7233 7028 7196 7087 7023 7113 6980 6972 6914 6857 6888 6803 6856 6819 6766 6755 6843 6755 6617 6744 6706 6539 6580 6493 6512 6515 6430 6323 6446 6329 6203 6223 6146 6089 6114 6112 6135 6050 6079 6072 6093 6275 6198 6169 6227 6332 6358 6768 7168 7925 9153 11529 16111 24590 39702 58801 74524 74894 60474 40515 26200 17500 12399 9657 7800 6800 6091 5641 5349 5246 4955 4772 4721 4512 4427 4400 4404 4297 4121 4047 4034 3960 3957 3965 3902 3907 3751 3794 3855 3774 3769 3733 3557 3631 3582 3510 3481 3591 3678 3476 3514 3554 3382 3388 3428 3424 3370 3328 3398 3383 3306 3342 3351 3291 3306 3320 3370 3281 3293 3348 3357 3460 3374 3417 3377 3419 3365 3359 3296 3345 3355 3332 3271 3178 3381 3301 3265 3216 3200 3214 3267 3342 3160 3298 3204 3193 3312 3276 3252 3216 3282 3246 3223 3174 3235 3148 3066 3151 3151 3164 3113 3111 3168 3092 3140 3170 3070 3199 3148 3068 3184 3010 3055 2998 3123 3108 2971 2999 2990 2987 3150 3017 2947 2973 2945 2930 2966 2870 2925 2919 2940 2986 2924 2931 2895 2854 2848 2878 2896 2828 2812 2834 2845 2770 2782 2880 2779 2829 2763 2792 2908 2794 2696 2667 2690 2766 2736 2617 2749 2715 2693 2719 2724 2812 2705 2702 2824 2717 2778 2751 2646 2579 2749 2673 2744 2664 2680 2737 2720 2747 2681 2710 2602 2634 2688 2645 2691 2673 2612 2634 2653 2694 2645 2703 2672 2696 2756 2691 2625 2707 2663 2671 2717 2574 2807 2711 2712 2691 2686 2587 2733 2617 2744 2689 2756 2686 2575 2650 2606 2715 2724 2632 2634 2737 2786 2793 2639 2689 2773 2706 2649 2670 2657 2685 2731 2568 2669 2684 2617 2677 2701 2651 2608 2723 2698 2706 2727 2647 2612 2695 2717 2691 2616 2699 2625 2663 2650 2649 2799 2632 2612 2662 2613 2644 2716 2794 2717 2565 2707 2665 2586 2608 2664 2633 2676 2692 2601 2653 2627 2686 2589 2561 2635 2617 2620 2683 2781 2611 2608 2552 2613 2605 2581 2641 2542 2549 2536 2514 2633 2507 2486 2505 2524 2587 2631 2484 2525 2558 2529 2488 2535 2440 2450 2495 2426 2418 2455 2458 2520 2432 2406 2508 2401 2455 2420 2422 2486 2384 2411 2334 2398 2419 2365 2451 2387 2339 2247 2318 2381 2372 2366 2277 2381 2386 2286 2275 2269 2324 2269 2224 2216 2343 2285 2338 2291 2251 2237 2214 2234 2251 2244 2310 2304 2271 2242 2233 2294 2281 2377 2373 2428 2450 2529 2703 2933 2896 3033 3120 3075 3059 2859 2705 2566 2499 2411 2327 2318 2207 2146 2110 2191 2072 2076 2050 2059 1969 2008 2067 1975 2013 1979 1988 2048 1919</intensities>
+			</dataPoints>
+		</scan>
+	</xrdMeasurement>
+</xrdMeasurements>
